@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span, a {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.home {
+    background-color: yellow;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url('background.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.nav {
+    padding: 40px 60px;
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoa {
+    text-decoration: none;
+}
+.btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+    margin-right: 24px;
+}
+.sign {
+    text-decoration: none;
+    color: green;
+    text-transform: capitalize;
+}
+.signup {
+    margin-right: 24px;
+}
+.signin {
+    background-color: green;
+    color: white;
+    padding: 5px 20px;
+}
+.content {
+    width: 50%;
+    border: 5px solid blue;
+    margin-left: auto;
+}
+.box {
+    padding: 80px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.h1 {
+    font-size: 54px;
+    line-height: 1;
+    color: green;
+    margin-bottom: 25px;
+}
+.buttons {
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.button {
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+}
+@media(max-width:1000px){
+    .box {
+        padding: 30px;
+    }
+    .buttons {
+        padding-left: 30px;
+    }
+    .button {
+        padding: 15px;
+        font-size: 17px;
+    }
+    .nav {
+        padding: 20px;
+    }
+}
+@media(max-width:920px){
+    .home {
+        background-image: none;
+    }
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+    .button {
+        width: auto;
+        padding: 15px 50px;
+    }
+    .box, .buttons {
+        padding: 0;
+    }
+    .box {
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:460px){
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
+    .h1 {
+        font-size: 48px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .home {
+        text-align: center;
+    }
+}
+@media(max-width:350px){
+    .signup {
+        width: 100%;
+        margin: 15px 0;
+        margin-right: 0;
+    }
+    .btn {
+        margin: 10px 15px;
+    }
+    .nav, .content {
+        padding: 10px;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+    .buttons {
+        justify-content: center;
+    }
+    .button {
+        font-size: 15px;
+        width: auto;
+        padding: 10px 20px;
+    }
+}
